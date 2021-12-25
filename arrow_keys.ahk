@@ -3,14 +3,16 @@ SetCapsLockState,AlwaysOff
 SetNumLockState,AlwaysOn
 
 ;Pok3r Settings
+`::Esc
+LShift & `::~
+;Capslock & Esc::`
+Capslock & `::`
 Capslock & i::up
 Capslock & j::left
 Capslock & k::down
 Capslock & l::right
 Capslock & h::home
 Capslock & n::end
-Capslock & Esc::`
-LShift & Esc::~
 Capslock & Backspace::del
 Capslock & `;::Ins
 Capslock & '::del
