@@ -5,7 +5,7 @@ SetNumLockState,AlwaysOn
 ;Pok3r Settings
 `::Esc
 LShift & `::~
-;Capslock & Esc::`
+Capslock & Esc::`
 Capslock & `::`
 Capslock & i::up
 Capslock & j::left
@@ -19,8 +19,30 @@ Capslock & '::del
 ;Capslock & o::PgDn
 Capslock & u::PgUp
 
-;Alt+4 = Alf + F4
-LAlt + 4 :: WinClose, A
+Capslock & 1::F1
+Capslock & 2::F2
+Capslock & 3::F3
+Capslock & 4::F4
+Capslock & 5::F5
+Capslock & 6::F6
+Capslock & 7::F7
+Capslock & 8::F8
+Capslock & 9::F9
+Capslock & 0::F10
+Capslock & -::F11
+Capslock & =::F12
+
+;Capslock & p::PrintScreen
+;Capslock & [::Scrolllock
+Capslock & ]::Pause
+Capslock & Z::APPSKEY
+
+Capslock & s::SoundSet, -5
+Capslock & d::SoundSet, +5
+Capslock & f:: Send {VOLUME_MUTE}
+
+;Alt+4 = Alt + F4
+LAlt & 4::Send {LAlt down}{F4 down}{LAlt up}{F4 up}
 
 ;Garrison KeyBinds
 Capslock & o::Send admin{tab}password{enter}
