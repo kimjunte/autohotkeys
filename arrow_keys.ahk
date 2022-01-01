@@ -19,6 +19,9 @@ Capslock & '::del
 ;Capslock & o::PgDn
 Capslock & u::PgUp
 
+;Alt+4 = Alf + F4
+LAlt + 4 :: WinClose, A
+
 ;Garrison KeyBinds
 Capslock & o::Send admin{tab}password{enter}
 Capslock & p::Send admin{tab}PasswordPassword1234`%{enter}
