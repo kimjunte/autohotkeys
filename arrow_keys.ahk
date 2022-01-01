@@ -40,6 +40,7 @@ Capslock & Z::APPSKEY
 Capslock & s::SoundSet, -5
 Capslock & d::SoundSet, +5
 Capslock & f:: Send {VOLUME_MUTE}
+Capslock & m:: Send {VOLUME_MUTE}
 
 ;Alt+4 = Alt + F4
 LAlt & 4::Send {LAlt down}{F4 down}{LAlt up}{F4 up}
