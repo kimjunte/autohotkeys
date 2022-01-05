@@ -49,6 +49,7 @@ LAlt & 4::Send {LAlt down}{F4 down}{LAlt up}{F4 up}
 Capslock & o::Send admin{tab}password{enter}
 Capslock & p::Send admin{tab}PasswordPassword1234`%{enter}
 Capslock & [::Send user{tab}PasswordPassword1234`%{enter}
+Capslock & t::Send thisisunsafe
 
 ; Copy and paste to url key binds
 Capslock & v::Send {Ctrl down}{t}{Ctrl up}{h}{t}{t}{p}{s}{:}{/}{/}{Ctrl down}{v}{Ctrl up}{enter}
