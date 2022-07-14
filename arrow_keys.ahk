@@ -5,6 +5,7 @@ SetNumLockState,AlwaysOn
 ;Pok3r Settings
 `::Esc
 LShift & `::~
+LShift & Esc::~
 Capslock & Esc::`
 Capslock & `::`
 Capslock & i::up
