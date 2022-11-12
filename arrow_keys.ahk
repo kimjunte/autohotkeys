@@ -1,4 +1,4 @@
-﻿#InstallKeybdHook
+#InstallKeybdHook
 SetCapsLockState,AlwaysOff
 SetNumLockState,AlwaysOn
 
@@ -47,9 +47,6 @@ Capslock & m:: Send {VOLUME_MUTE}
 LAlt & 4::Send {LAlt down}{F4 down}{LAlt up}{F4 up}
 
 ;Garrison KeyBinds
-Capslock & o::Send admin{tab}password{enter}
-Capslock & p::Send admin{tab}PasswordPassword1234`%{enter}
-Capslock & [::Send user{tab}PasswordPassword1234`%{enter}
 Capslock & t::Send thisisunsafe
 
 ; Copy and paste to url key binds
@@ -69,3 +66,7 @@ return
 Capslock & w::
 Send {Media_Play_Pause}
 return
+
+;Windows key + H, turns hibernation on
+#h::
+DllCall("PowrProf\SetSuspendState", "int", 1, "int", 0, "int", 0)
