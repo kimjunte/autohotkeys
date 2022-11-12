@@ -1,6 +1,7 @@
 #InstallKeybdHook
 SetCapsLockState,AlwaysOff
 SetNumLockState,AlwaysOn
+SetScrollLockState, AlwaysOff
 
 ;Pok3r Settings
 `::Esc
@@ -17,7 +18,7 @@ Capslock & n::end
 Capslock & Backspace::del
 Capslock & `;::Ins
 Capslock & '::del
-;Capslock & o::PgDn
+Capslock & o::PgDn
 Capslock & u::PgUp
 
 Capslock & 1::F1
@@ -33,14 +34,13 @@ Capslock & 0::F10
 Capslock & -::F11
 Capslock & =::F12
 
-;Capslock & p::PrintScreen
-;Capslock & [::Scrolllock
+Capslock & p::PrintScreen
+Capslock & [::Scrolllock
 Capslock & ]::Pause
 Capslock & Z::APPSKEY
 
 Capslock & s::SoundSet, -5
 Capslock & d::SoundSet, +5
-Capslock & f:: Send {VOLUME_MUTE}
 Capslock & m:: Send {VOLUME_MUTE}
 
 ;Alt+4 = Alt + F4
@@ -57,6 +57,7 @@ Capslock & c::Send {Ctrl down}{t}{Ctrl up}{Ctrl down}{v}{Ctrl up}{enter}
 Capslock & e:: ;the + means shift
 Send {Media_Next}
 return
+
 ;previous song
 Capslock & q::
 Send {Media_Prev}
@@ -70,3 +71,18 @@ return
 ;Windows key + H, turns hibernation on
 #h::
 DllCall("PowrProf\SetSuspendState", "int", 1, "int", 0, "int", 0)
+
+
+; Ctrl + Shift + v allows copying and searching to google automatically
+^+v::
+{
+ Send, ^c
+ Sleep 50
+ Run, https://www.google.com/search?q=%clipboard%
+ Return
+}
+
+
+; Always on Top
+^SPACE:: Winset, Alwaysontop, , A ; ctrl + space
+Return
