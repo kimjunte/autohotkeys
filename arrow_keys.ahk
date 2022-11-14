@@ -37,7 +37,7 @@ Capslock & =::F12
 Capslock & p::PrintScreen
 Capslock & [::Scrolllock
 Capslock & ]::Pause
-Capslock & Z::APPSKEY
+;Capslock & Z::APPSKEY
 
 Capslock & s::SoundSet, -5
 Capslock & d::SoundSet, +5
@@ -92,8 +92,24 @@ Capslock & y::
  Return
 }
 
+; Search in amazon
+Capslock & a::
+{
+ Send, ^c
+ Sleep 50
+ Run, https://www.amazon.co.uk/s?k=%clipboard%
+ Return
+}
 
 ; Always on Top
 ^SPACE:: Winset, Alwaysontop, , A ; ctrl + space
 Return
 
+; Ctrl + z for git information
+Capslock & z::
+{
+ Send git config --global user.name "Jun-te Kim" {enter}
+ Sleep 50
+ Send git config --global user.email "junte.kim@mealcraft.co.uk" {enter}
+ Return
+}
