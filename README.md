@@ -4,4 +4,4 @@ Add git
 
 git init
 
-git remote add  git@github.com:kimjunte/autohotkeys.git
+git remote add autohotkey git@github.com:kimjunte/autohotkeys.git
