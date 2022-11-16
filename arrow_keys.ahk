@@ -111,5 +111,6 @@ Capslock & z::
  Send git config --global user.name "Jun-te Kim" {enter}
  Sleep 50
  Send git config --global user.email "junte.kim@mealcraft.co.uk" {enter}
+ Send {UP 3} {enter}
  Return
 }
