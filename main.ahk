@@ -112,5 +112,7 @@ Capslock & z::
  Sleep 50
  Send git config --global user.email "junte.kim@mealcraft.co.uk" {enter}
  Send {UP 3} {enter}
+ Sleep 100
+ Send git push {enter}
  Return
 }
