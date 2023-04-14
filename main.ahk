@@ -68,6 +68,11 @@ Capslock & w::
 Send {Media_Play_Pause}
 return
 
+;play/pause for autohotkey
+<+<!w::
+Send {Media_Play_Pause}
+return
+
 ;Windows key + H, turns hibernation on
 #h::
 DllCall("PowrProf\SetSuspendState", "int", 1, "int", 0, "int", 0)
@@ -110,7 +115,7 @@ Capslock & z::
 {
  Send git config --global user.name "Jun-te Kim" {enter}
  Sleep 50
- Send git config --global user.email "junte.kim@mealcraft.co.uk" {enter}
+ Send git config --global user.email "junte.kim@mealcraft.com" {enter}
  Send {UP 3} {enter}
  Sleep 100
  Send git push {enter}
